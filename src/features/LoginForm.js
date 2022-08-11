@@ -1,24 +1,10 @@
-import React, {useState, useEffect} from 'react'
-import { View, StyleSheet, Text } from 'react-native';
+import React, { useEffect } from 'react'
+import { View, StyleSheet } from 'react-native';
 import axios from 'axios';
 import { TextInput, HelperText } from 'react-native-paper'
 import { BtnRounded } from '../components/BtnRounded'
-import { TravelsTab } from '../screens/TabsScreen';
 
-import { userPropsMock } from '../mocks/userProps'
-
-const initialState = {
-  username: '',       
-  password: '',       
-  errors: null,         
-  isAuthorized: false,
-  isLoading: false,
-  userData: null 
-};
-
-export const LoginForm = ({navigation, addUser}) => {
-
-  const [user, setUser] = useState(initialState)
+export const LoginForm = ({navigation, user, setUser}) => {
 
   const usernameChange = (username) => {
     setUser((user) => ({...user, username}))
@@ -52,7 +38,6 @@ export const LoginForm = ({navigation, addUser}) => {
     
     axios(config)
     .then(function (response) {
-      addUser(response)
       setUser((user) => ({...user, isLoading: false, isAuthorized: true, errors: null, userData: response}))
     })
     .catch(function (error) {
@@ -92,9 +77,6 @@ export const LoginForm = ({navigation, addUser}) => {
             size={250}
             onPress={() => handleSend(user)}
           />
-        </View>
-        <View>
-          <TravelsTab {...userPropsMock}/>
         </View>
       </View>
 )

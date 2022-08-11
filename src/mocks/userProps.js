@@ -14,7 +14,7 @@ export const userPropsMock = {
                       "rol":"transportista",
                       "tyc_aceptado_el":"2022-04-06 16:00:15"
                    },
-                   "access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjExNywiaWF0IjoxNjYwMTQyODcwLCJyb2wiOiJ0cmFuc3BvcnRpc3RhIiwidmVyaWZ5IjoiYzRjOTgyZWUtODIzOC00MzBlLTk3M2QtY2M3Yjc0OGQ5NzY2In0.UGwFQG4l4ztbzgzDB82HJKq9cyn2QeMVHKwBlqpKgKA"
+                   "access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjExNywiaWF0IjoxNjYwMTU2NTc0LCJyb2wiOiJ0cmFuc3BvcnRpc3RhIiwidmVyaWZ5IjoiMzFmMTczYjQtNjU4NC00YzU3LWJjNzctODk1ZmRlMjM4YTYwIn0.qq8BViFnu9Ff8_LhnNaUVr0j2RfxJZ1x82puMHLELOQ"
                 },
                 "status":200,
                 "statusText":"",
